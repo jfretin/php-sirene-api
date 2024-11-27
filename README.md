@@ -1,6 +1,6 @@
 # PHP SIRENE API
 
-PHP package to use version 3 of SIRENE API.
+PHP package to use version 3.11 of SIRENE API.
 
 ### Authentification
 
@@ -10,6 +10,7 @@ You need a token authentification to use SIRENE API version 3. You can generate 
 
 - **For the version 1 of SIRENE API, please check out the `v1` branch in this repository.**
 - **For the version 2 of SIRENE API, please check out the `v2` branch in this repository.**
+- **For the version 3 of SIRENE API (below 3.11), please check out the `v3` branch in this repository.**
 
 ## Install
 

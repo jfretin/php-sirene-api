@@ -5,7 +5,7 @@ namespace Sirene;
 use Sirene\Traits\Builder;
 
 /**
- * Sirene Version 3 API
+ * Sirene Version 3.11 API (new endpoint)
  */
 class Sirene
 {
@@ -34,7 +34,7 @@ class Sirene
     public function __construct($token)
     {
         $this->token = $token;
-        $this->version = "V3";
+        $this->version = "3.11";
     }
 
     /**

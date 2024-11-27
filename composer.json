@@ -1,18 +1,23 @@
 {
-    "name": "cba85/php-sirene-api",
+    "name": "jfretin/php-sirene-api",
     "type": "library",
     "description": "PHP package for SIRENE API",
     "keywords": [
         "php",
         "sirene"
     ],
-    "homepage": "http://github.com/cba85/php-sirene-api",
+    "homepage": "http://github.com/jfretin/php-sirene-api",
     "license": "MIT",
     "authors": [
         {
             "name": "Clément Barbaza",
             "email": "hello@clementbarbaza.com",
             "homepage": "https://www.clementbarbaza.com/",
+            "role": "Developer"
+        },
+        {
+            "name": "Jonathan Fretin",
+            "email": "jfretin@gmail.com",
             "role": "Developer"
         }
     ],

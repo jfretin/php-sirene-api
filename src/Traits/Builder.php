@@ -13,7 +13,7 @@ trait Builder
      *
      * @var string
      */
-    private $url = "https://api.insee.fr/entreprises/sirene";
+    private $url = "https://api.insee.fr/api-sirene";
 
     /**
      * Search parameter
@@ -57,7 +57,7 @@ trait Builder
     {
         $client = new Client;
         $headers = [
-            'Authorization' => 'Bearer ' . $this->token,
+            'X-INSEE-Api-Key-Integration' => $this->token,
             'Accept' => 'application/json',
         ];
         $response = $client->request('GET', $encodedUrl, ['headers' => $headers]);
@@ -78,7 +78,10 @@ trait Builder
     {
         $this->url($search, $options);
 
-        $encodedUrl = "{$this->url}/{$this->version}/{$type}/{$this->search}";
+        $encodedUrl = "{$this->url}/{$this->version}/{$type}";
+        if ($this->search) {
+            $encodedUrl .= "/{$this->search}";
+        }
         if ($subtype) {
             $encodedUrl .= "/{$subtype}";
         }
